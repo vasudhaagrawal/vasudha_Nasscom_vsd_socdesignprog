@@ -14,3 +14,7 @@ Inside image of the chip is shown below. It is called as packages.This is partic
 
 
 ![5](https://github.com/user-attachments/assets/3a7b6248-9b54-4d46-87ba-60825f2a4a20)
+
+If we expand the chip. It consists of pads, core and die.
+
+![7](https://github.com/user-attachments/assets/a828585c-6935-4aa9-bf2c-ea7a81dd269b)
