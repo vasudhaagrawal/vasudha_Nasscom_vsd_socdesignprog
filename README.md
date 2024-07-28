@@ -32,6 +32,8 @@ If we expand the chip. It consists of pads, core and die.
 
 *  **Macros**: "macros refer to pre-designed and pre-verified blocks of circuitry that are used as building components in an integrated circuit (IC). These blocks can range from simple components, like logic gates, to more complex functional units, such as memories or processors. It is pur digital logic.
 
-### In Introduction to QFN-48 Package, chip, pads, core, die and IPs
+### In Introduction to RISC V
+>  An ISA defines the way a processor interacts with the software and hardware. RISC-V is an open-standard Instruction Set Architecture (ISA) based on established Reduced Instruction Set Computing (RISC) principles.RISC V is the language of the computer. It is the way we are goinig to talk to the computer so that top level decription about an ISA (Instruction set Architecture).
 
+![1](https://github.com/user-attachments/assets/5ae3e700-f15a-4967-8a5e-3f1368e33d96)
 
