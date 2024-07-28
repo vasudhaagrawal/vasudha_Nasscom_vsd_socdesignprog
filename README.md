@@ -42,3 +42,9 @@ If we expand the chip. It consists of pads, core and die.
 
 ![2](https://github.com/user-attachments/assets/00bde373-c2b2-4192-b40e-8737f364baab)
 
+### From software application to hardware
+> In real life, we typically interact with application software (applications) to communicate with the hardware. Between the application software and hardware, there is a layer called system software. The application interface with the system software which then converts the application progrem into the binary language.
+![L3_1](https://github.com/user-attachments/assets/e293e4b4-745b-4083-aa7c-6e9b378e8891)
+>
+> The system software is comprised of several layers:
+>* Operating ystem (OS): The task of the OS is to handle input/output operations, memory allocation and low level system function. The operating system converts the apps into corresponding code in language s such as C, C++, Java.
