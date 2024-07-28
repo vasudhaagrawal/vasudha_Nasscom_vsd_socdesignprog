@@ -50,3 +50,8 @@ If we expand the chip. It consists of pads, core and die.
 >* Operating ystem (OS): The task of the OS is to handle input/output operations, memory allocation and low level system function. The operating system converts the apps into corresponding code in language s such as C, C++, Java.
 >* Compiler: The compiler takes the code from the OS and converts it into an instruction set (eg .exe files).Instr1, Instr2 acts as an abstract interface between c language and hardware.
 >* Assembler: The assembler converts the .exe files into binary language which the hardware understand and execute to perform the desired operation.
+>
+## Day-1  SoC design and OpenLANE
+### Introduction to all components of open-source digital asic design
+
+
