@@ -8,6 +8,9 @@
 > 
 ![2](https://github.com/user-attachments/assets/b1f0600a-d363-4c93-9e41-81725edb02c9)
 
-Inside image of the processor is shown below
+Inside image of the chip is shown below. It is called as packages.This is particularly QFN-48. Chip is lacated at the centre of the package. CHip is connected to the packages using wire bond.
 
 ![4](https://github.com/user-attachments/assets/62a5f64a-3130-4c34-b86a-12f069de6e06)
+
+
+![5](https://github.com/user-attachments/assets/3a7b6248-9b54-4d46-87ba-60825f2a4a20)
