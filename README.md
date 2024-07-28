@@ -1,4 +1,4 @@
-# vasudha_Nasscom_vsd_socdesignprog
+b# vasudha_Nasscom_vsd_socdesignprog
 ## Inception of open source EDA, openLANE, sky130
 ## Day-1 How to talk to computers
 ### In Introduction to QFN-48 Package, chip, pads, core, die and IPs
@@ -53,5 +53,16 @@ If we expand the chip. It consists of pads, core and die.
 >
 ## Day-1  SoC design and OpenLANE
 ### Introduction to all components of open-source digital asic design
+> An Application-Specific Integrated Circuit (ASIC) is a type of integrated circuit (IC) customized for a particular use or application rather than intended for general-purpose use.  Elements to design ASIC are:
+> 1. RTL
+> 2. EDA
+> 3. PDK
 
 
+![1](https://github.com/user-attachments/assets/f8e7de77-3154-4d77-9cd1-808a0d223fa1)
+
+* RTL: RTL (Register Transfer Level) is a critical abstraction level used in the digital design process of ASICs and FPGAs. It describes the flow of data between registers and the logical operations performed on that data. RTL design is implemented using Hardware Description Languages (HDLs) such as Verilog or VHDL. Open source RTL design sites are given in figure.
+* EDA: EDA (Electronic Design Automation) tools are software solutions that facilitate the design, simulation, verification, and manufacturing of electronic systems, particularly integrated circuits (ICs) and printed circuit boards (PCBs). EDA tools are essential for managing the complexity of modern electronics design and ensuring that designs meet performance, power, area, and manufacturability requirements.
+* PDK: THe interface between the FAB and the designer becomes set of data files and documents that is referred to as PDK. Collection of files used to model a fabrication process for the EDA tools used to design an IC.
+> PDK includes process design rules such as DRC, LVS, PEX, device models, digital standard libraries and I/O libraries and many more.
+>> In 2020, google releases its first ever open source PDK for the masses. The PDK has all the data information for successful ASIC implementation using open source EDA tools for 130 nm. ASIC design is a complex process. A methodology is needed for successful ASIC implementation. The main objective of ASIC flow is to take the design from RTL to GDSII final layout.
