@@ -100,3 +100,16 @@ Most routers are grid routers. They construct the routing grid out of the metal 
 
 * Sign off: After the routing is completed, we construct final layout which undergoes various varifications like physical verifications and timing verifications. Physical verifications are DRC (design rule check), LVS (Layout vs schematic). DRC verifies design rule compliance, while LVS ensures functional correctness against the gate level netlist.
 > Timing verification is static timing analysis, this checks the design for timing violations.  
+
+### OpenLANE ASIC flow
+ When using open source EDA tools we need to know about 
++ Tools qualification
++ Tools calibration
++ Missing tools
++ 
+OPen source has public repo on Github. OpenLANE started as an open-source flow for a true open source tape-out experiment. At efabless we have a familty called stiVe and we wanted to have open everything SOCs : open PDK, open EDA, open RTC.
+
+ StiVe SOCs have several members as shown below.
+![strive](https://github.com/user-attachments/assets/610a0716-466d-49fe-893b-04829169649a)
+
+The main goal of the openLANE is to produce clean GDSII with no human intervention
