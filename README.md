@@ -119,3 +119,42 @@ The diagram shows openLANE ASIC flow. The flow strarts with design RTL which und
 
 ![openlane ASIC flow](https://github.com/user-attachments/assets/563de540-27cf-4656-a212-01e2eb7e4724)
 
+Open source project FAULT for DFT includes:
+* Scan insertion
+* Automatic Test pattern generation (ATPG)
+* Test pattern compaction
+* Fault coverage
+* Fault simulation
+  
+
+![Fault](https://github.com/user-attachments/assets/d69e4673-5ae5-4b43-9fba-41089c6ebe47)
+
+After DFT, next step is physical implementation, also known as Automated Place and Rout (PnR), using openRoad.
+
+For physical implmentation we use OpenRoad to perform
++ Floor/power planning
++ End decoupling capacitors and tap cells
++ Placement: Global and detailed
++ Post placement optimization
++ Clock tree synthesis
++ Routiong: GLobal and detailed
+
+  During PnR, LEC is performed using Yosys. SO we compare the netlist resultant from the optimization during physical implementation to the gate level netlist generated from the sythesis to make sure the functional equivalence. LEC ensures that function did not change after modifying the netlist.
+
+> Fake antenna diode insertion is the most impart step during physical implementation. This step is requires to avoid antenna rule violations.
+
+**Dealing with antenna rules violations**
+> When a metal wire segment is fabricated and it is long enough, it can acts as an antenna . RIE causes charge to accumulate on the wire, damaging the transistor gates during fabrications.
+> Generally router eleminates such issues. If routers fails there are two solutions:
+> 1. Bridging attaches a higher layer intermideary
+> 2. Add antenna diode cell to leak away charges. antenna diodes are provided by the SCL.
+
+![solutions](https://github.com/user-attachments/assets/b4478bf7-d619-4d51-83e3-5605eb39c166)
+
+With OpenLane, we take preventive approach. We add a fake antenna diode next to every cell input after placement. Run the antenna checker (magic) on the routed layout. If the checker reports a violation on the cell input pin, replace the fake diode cell by the real one.
+![9](https://github.com/user-attachments/assets/8d77ad61-10b4-4bba-a3ab-3492a10b1277)
+
+ At the end, physical verification is performed which includes dDRC and LVS. Along with physial verification STA is also performed to check for timing violations in the design.
+ DRC is performed using magic and also SPICE extraction from layout.
+ MAgic and Netgen are used for LVS by comparing extracted SPICE by Magic vs. verilog netlist.
+
