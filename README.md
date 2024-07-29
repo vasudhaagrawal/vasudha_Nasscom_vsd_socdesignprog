@@ -270,8 +270,10 @@ ls -ltr
 > * Automated placement and routing tools places the remaining logical cells in the design onto chip.
 > * Pre-placed cells are macros or IP's which is a piece of complex logic that can be reused multiple times.
 > * The arrangement of the IP's in chip is referred as floor planning.
+> * Preplaced cells surroud with decoupling capacitors.
 
 ## Decoupling capacitors
-> 
+> * Place capacitors around pre-placed cells to stabilize power and mitigate noise interference.
+> * Ensure adequate coverage to prevent power supply issues and maintain signal integrity.
 
 
