@@ -265,5 +265,13 @@ ls -ltr
 > when AR=1; it signifies the chip is sqare shape.
 >      AR &ne; 1; chip is rectangular shape.
 
+## Define the location of pre placed cell.
+> * Placement of IP's/block in a user defined location in chip before automated placement and routing are called pre-placed cells.
+> * Automated placement and routing tools places the remaining logical cells in the design onto chip.
+> * Pre-placed cells are macros or IP's which is a piece of complex logic that can be reused multiple times.
+> * The arrangement of the IP's in chip is referred as floor planning.
+
+## Decoupling capacitors
+> 
 
 
