@@ -266,4 +266,4 @@ ls -ltr
 >      AR &ne 1; chip is rectangular shape.
 
 
-
+&ne;
