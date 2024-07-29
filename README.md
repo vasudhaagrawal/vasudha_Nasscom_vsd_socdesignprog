@@ -161,3 +161,7 @@ With OpenLane, we take preventive approach. We add a fake antenna diode next to 
  ## Get familiar to open-source EDA tools
 ###  OpenLANE Directory structure in detail
 
+OpenLANE comprises of many open source EDA tools. The aim of openLANE tool is to get RTl to GDSII flow.
+** Commands to invoke openLANE tool
+
+
