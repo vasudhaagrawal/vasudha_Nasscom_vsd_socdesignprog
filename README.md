@@ -1,6 +1,6 @@
 # vasudha_Nasscom_vsd_socdesignprog
-## Inception of open source EDA, openLANE, sky130
-## Day-1 How to talk to computers
+##  Day-1 Inception of open source EDA, openLANE, sky130
+## How to talk to computers
 ### In Introduction to QFN-48 Package, chip, pads, core, die and IPs
 > The aim of the workshop is to give fundamental overview of chip design. Below image shows the arduino baord, known as FPGA board. Here, we will concentrate on the chip in the board called processor
 ![1](https://github.com/user-attachments/assets/bb6c61ee-9939-4835-82b9-b11961b4711e)
@@ -246,6 +246,24 @@ cd reports
 ls -ltr
 cd synthesis
 ls -ltr
+
+## Day 2 - Good floorplan vs bad floorplan and introduction to library cells
+## Chip Floor planning considerations
+
+**1. Define width and height of core and die**
+> * Establish core and die dimensions to fir the design witin the chip's physical constraints.
+> * Ensue the aspect ratio aligns with design and manufacturing requirements for optimal layout. All the logical cell should be inside the core.
+>
+> If logical cell occupies the complete area of the core as shown below then there is 100 % utilization.
+>
+> Utilization factor= Area occupied by netlist/Total area of the core.
+>
+> In case of 100 % utilization, utilization factor=1.
+> Practically, we don't go for 100% utilizatio, we go for 50-60% utilization and utilization factor=0.5-0.6.
+>
+> **Aspect ratio=Height/width**
+> when AR=1; it signifies the chip is sqare shape.
+>      AR\ne 1; chip is rectangular shape.
 
 
 
