@@ -285,6 +285,6 @@ ls -ltr
 > * Proper pin placement ensure signal integrity, routing efficiency, power distribution, thermal management, and manufacturing considerations.
 
 **Logical cell placement blockage**
-> *Logical cell placement blockage refers to regions within the IC layout where standard cells or logical cells are restricted from being placed as it is reserved for the pin placement.
+> * Logical cell placement blockage refers to regions within the IC layout where standard cells or logical cells are restricted from being placed as it is reserved for the pin placement.
 
 
