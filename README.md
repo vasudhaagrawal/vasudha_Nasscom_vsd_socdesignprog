@@ -263,7 +263,7 @@ ls -ltr
 >
 > **Aspect ratio=Height/width**
 > when AR=1; it signifies the chip is sqare shape.
->      AR\ne 1; chip is rectangular shape.
+>      AR &ne 1; chip is rectangular shape.
 
 
 
