@@ -158,3 +158,6 @@ With OpenLane, we take preventive approach. We add a fake antenna diode next to 
  DRC is performed using magic and also SPICE extraction from layout.
  MAgic and Netgen are used for LVS by comparing extracted SPICE by Magic vs. verilog netlist.
 
+ ## Get familiar to open-source EDA tools
+###  OpenLANE Directory structure in detail
+
