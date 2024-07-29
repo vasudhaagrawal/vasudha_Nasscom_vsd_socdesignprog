@@ -276,4 +276,9 @@ ls -ltr
 > * Place capacitors around pre-placed cells to stabilize power and mitigate noise interference.
 > * Ensure adequate coverage to prevent power supply issues and maintain signal integrity.
 
+## Power planning
+> * It involves creating a robust power distribution network (PDN) that ensures all parts of the chip receive adequate power while minimizing power noise, voltage drops (IR drop).
+> * Multiple Vdd and Gnd is placed in the chip to solve the problem of voltage droop and voltage bump due to single power supply line. 
+> * Pin placement refers to the strategic positioning of input/output (I/O) pins around the periphery of the IC or within specific regions in the case of advanced packaging or multi-die systems.
+
 
