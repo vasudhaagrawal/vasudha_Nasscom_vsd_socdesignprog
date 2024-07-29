@@ -115,6 +115,7 @@ OPen source has public repo on Github. OpenLANE started as an open-source flow f
 The main goal of the openLANE is to produce clean GDSII with no human intervention i.e. No LVS violation, No DRC violations and timing violations Open LANE is tuned for skywater130nm open PDK, It is also tested for XFAB180 and GF130G. 
 It can be used to impement macros and chips. It has two mode of operations: autonomous (push button based) and interactive (run commands one by one).
 OpenLANE is based on several open source projects such as Yosis, OpenRoad, magic, klayout, fault and some of othe open source tools.
-The diagram shows openLANE ASIC flow. The flow strarts with design RTL which undergoes RTL synthesis using Yosis and ABS to produce an optimized gate-level netlist. This netlist is then subjected to STA (ststic timing analysis) to check for timing violations.  Following STA, Design for Test (DFT) is performed, though this step is optionaland uses the fault tool.
+The diagram shows openLANE ASIC flow. The flow strarts with design RTL which undergoes RTL synthesis using Yosis and ABS to produce an optimized gate-level netlist. This netlist is then subjected to STA (ststic timing analysis) to check for timing violations.  Following STA, Design for Test (DFT) is performed, though this step is optiona land uses the fault tool.
+
 ![openlane ASIC flow](https://github.com/user-attachments/assets/563de540-27cf-4656-a212-01e2eb7e4724)
-openLANE is based on several open source project
+
