@@ -95,5 +95,8 @@ Typically cell placements are done in two steps global followed by detailed plac
 After clock routing, signal routing is performed using fixed number of metal layers. Routing uses the availble metal layers defined as defined by PDKs.
 The sky130 pdk defines six metal layers. The last layer is called the local interconnect layer (Ti), the follwing five layers also local interconnect layers are all Al layers.
 Most routers are grid routers. They construct the routing grid out of the metal layer track. As routing grid is huge, divide and conqure approch is used for routing.
-1. Global routing: It generates routing grds using course grid.
+1. Global routing: It generates routing guide using course grid.
 2. Detailed routing: I uses the routing guides to implement the actual wiring.
+
+* Sign off: After the routing is completed, we construct final layout which undergoes various varifications like physical verifications and timing verifications. Physical verifications are DRC (design rule check), LVS (Layout vs schematic). DRC verifies design rule compliance, while LVS ensures functional correctness against the gate level netlist.
+> Timing verification is static timing analysis, this checks the design for timing violations.  
