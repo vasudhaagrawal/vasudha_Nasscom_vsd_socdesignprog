@@ -1,4 +1,4 @@
-b# vasudha_Nasscom_vsd_socdesignprog
+# vasudha_Nasscom_vsd_socdesignprog
 ## Inception of open source EDA, openLANE, sky130
 ## Day-1 How to talk to computers
 ### In Introduction to QFN-48 Package, chip, pads, core, die and IPs
@@ -66,3 +66,8 @@ If we expand the chip. It consists of pads, core and die.
 * PDK: THe interface between the FAB and the designer becomes set of data files and documents that is referred to as PDK. Collection of files used to model a fabrication process for the EDA tools used to design an IC.
 > PDK includes process design rules such as DRC, LVS, PEX, device models, digital standard libraries and I/O libraries and many more.
 >> In 2020, google releases its first ever open source PDK for the masses. The PDK has all the data information for successful ASIC implementation using open source EDA tools for 130 nm. ASIC design is a complex process. A methodology is needed for successful ASIC implementation. The main objective of ASIC flow is to take the design from RTL to GDSII final layout.
+
+### Simplified RTL2GDS flow
+
+This starts with a RTL model ends with ready to fabricate mask layout in GDSII formate.
+![2](https://github.com/user-attachments/assets/6832e7c7-78e9-4519-a514-51013616bef1)
