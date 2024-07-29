@@ -265,20 +265,26 @@ ls -ltr
 > when AR=1; it signifies the chip is sqare shape.
 >      AR &ne; 1; chip is rectangular shape.
 
-## Define the location of pre placed cell.
+**2.Define the location of pre placed cell**
 > * Placement of IP's/block in a user defined location in chip before automated placement and routing are called pre-placed cells.
 > * Automated placement and routing tools places the remaining logical cells in the design onto chip.
 > * Pre-placed cells are macros or IP's which is a piece of complex logic that can be reused multiple times.
 > * The arrangement of the IP's in chip is referred as floor planning.
 > * Preplaced cells surroud with decoupling capacitors.
 
-## Decoupling capacitors
+ **Decoupling capacitors**
 > * Place capacitors around pre-placed cells to stabilize power and mitigate noise interference.
 > * Ensure adequate coverage to prevent power supply issues and maintain signal integrity.
 
-## Power planning
+**Power planning**
 > * It involves creating a robust power distribution network (PDN) that ensures all parts of the chip receive adequate power while minimizing power noise, voltage drops (IR drop).
-> * Multiple Vdd and Gnd is placed in the chip to solve the problem of voltage droop and voltage bump due to single power supply line. 
+> * Multiple Vdd and Gnd is placed in the chip to solve the problem of voltage droop and voltage bump due to single power supply line.
+
+**Pin placement**
 > * Pin placement refers to the strategic positioning of input/output (I/O) pins around the periphery of the IC or within specific regions in the case of advanced packaging or multi-die systems.
+> * Proper pin placement ensure signal integrity, routing efficiency, power distribution, thermal management, and manufacturing considerations.
+
+**Logical cell placement blockage**
+> *Logical cell placement blockage refers to regions within the IC layout where standard cells or logical cells are restricted from being placed as it is reserved for the pin placement.
 
 
