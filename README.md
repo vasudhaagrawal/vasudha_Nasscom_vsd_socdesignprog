@@ -69,5 +69,31 @@ If we expand the chip. It consists of pads, core and die.
 
 ### Simplified RTL2GDS flow
 
-This starts with a RTL model ends with ready to fabricate mask layout in GDSII formate.
+This starts with design a RTL model ends with ready to fabricate mask layout in GDSII format. The diagram shows the major implementation steps:
 ![2](https://github.com/user-attachments/assets/6832e7c7-78e9-4519-a514-51013616bef1)
+
+* Synthesis: Converts RTL to a circuitout of component from standard cell library (SCL). The resultant circuit is described in HDL, usually referred to as gate level netlist. A gate level netlist is function equivalent to the RTL. Standard cells have regular layout. Each cell comes with different models/view utilized by different EDA tools e.g. electrical, HDL, SPICE, laout (abstract and detailed) view. 
+![3](https://github.com/user-attachments/assets/d7f55b6d-d0ba-4d6f-a5d7-817b49ab85dd)
+
+* Floor planning and power planning: In chip floor planning a chip die is partitioned between different chip components and place the I/O pads.
+   
+![5](https://github.com/user-attachments/assets/d7dbe90a-993c-4bf1-8896-137cb5215c36)
+
+. In macro floor planning we define the macro dimentions, pin locations, also rows and routing tracks are defined.
+![6](https://github.com/user-attachments/assets/db09981a-fbc5-493a-a259-e2dd89f30ab9)
+
+In power planning power networks are consrtucted. Typically a chip is powered by multiple Vdd/Gnd pins; the power pins are connected to all component through rings, verticle and horizontal straps, such parallel structures are ment to reduce the resistance. Typically pwer distribution network uses the upper metal layer as they are thicker than lower metal layer hence have less resistance.
+![7](https://github.com/user-attachments/assets/11ce277d-dc51-4b9b-81d9-0b4ec5882181)
+
+* Placement: For macros we place the gate level netlist cells on the floor plan rows aligned with the sites. Connected cells to be placed very close to each other to reduce the interconnect delay.
+![8](https://github.com/user-attachments/assets/09691d5e-7ca7-4b4e-abf3-ff9be61a5933)
+Typically cell placements are done in two steps global followed by detailed placement.
+
+* Routing: Clock routing is performed prior to signal routing by creating clock distribution network that deliver the clock to all clock cells e.g. flip-flops. The clock network looks like a tree.The clock tree is synthesised to deliver the clock to all cells in good shape with minimum skew and minimum latancy. Clock skwe means the arrival of the clock at different component at different time. Symmetric tree structures (H-tree, I-tree, X-tree) are used to eleminate the clock skew. 
+![clkrout](https://github.com/user-attachments/assets/a9672c75-9368-45e5-8a9f-27b8825dca74)
+
+After clock routing, signal routing is performed using fixed number of metal layers. Routing uses the availble metal layers defined as defined by PDKs.
+The sky130 pdk defines six metal layers. The last layer is called the local interconnect layer (Ti), the follwing five layers also local interconnect layers are all Al layers.
+Most routers are grid routers. They construct the routing grid out of the metal layer track. As routing grid is huge, divide and conqure approch is used for routing.
+1. Global routing: It generates routing grds using course grid.
+2. Detailed routing: I uses the routing guides to implement the actual wiring.
