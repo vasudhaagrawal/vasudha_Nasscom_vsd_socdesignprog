@@ -163,8 +163,7 @@ With OpenLane, we take preventive approach. We add a fake antenna diode next to 
 
 OpenLANE comprises of many open source EDA tools. The aim of openLANE tool is to get RTl to GDSII flow.
 ** Commands to invoke openLANE tool
-
-<!-- cd Desktop/work/tools
+ cd Desktop/work/tools
 cd openlane_working_dir
 cd pdks
 cd sky130A
@@ -189,4 +188,64 @@ cd ../../../../
 ls -ltr
 cd openlane
 clear
--->
+
+**Commands to invoke OpenLANE**
+Commands to get into openLANE directory and invoke openLANE:
+cd Desktop/work/tools
+cd openlane_working_dir
+cd openlane
+docker
+ls -ltr
+./flow.tcl -interactive
+
+> Openlane is meant to automate RTL to GDS flow, so if we use ./flow.tcl without interaction, it will run the complete flow.
+>
+> Command to import all the packages
+> package require openlane 0.9
+
+Steps involved in preparing for the design process
+/openlane cd designs
+/ls -ltr
+picorv32a
+ls -ltr
+cd src      %SRC stands for source
+ls -ltr
+cd ../
+less config.tcl % bypass any configuration that has been already done into a plane
+ls -ltr
+clear
+
+prep -design picorv32a %prepare file system to setting data for design
+
+### Review files after design preparation and run synthesis
+cd runs
+ls -ltr
+cd 12_08_10_49
+ls -ltr
+cd temp
+less merged.lef
+cd ../ cd results
+cd synthesis
+cd ../../
+cd reports
+cd ../
+less config.tcl
+less cmd.log
+
+run_synthesis
+
+### Steps to characterize synthesis results
+
+cd results
+ls -ltr
+cd synthesis
+ls -ltr
+less picorv32a.synthesis.v
+cd ../ cd../
+cd reports
+ls -ltr
+cd synthesis
+ls -ltr
+
+
+
