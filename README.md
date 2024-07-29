@@ -163,8 +163,8 @@ With OpenLane, we take preventive approach. We add a fake antenna diode next to 
 
 OpenLANE comprises of many open source EDA tools. The aim of openLANE tool is to get RTl to GDSII flow.
 ** Commands to invoke openLANE tool
-<details>
-cd Desktop/work/tools
+
+<!-- cd Desktop/work/tools
 cd openlane_working_dir
 cd pdks
 cd sky130A
@@ -189,4 +189,4 @@ cd ../../../../
 ls -ltr
 cd openlane
 clear
-</details>
+-->
