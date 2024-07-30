@@ -162,12 +162,16 @@ With OpenLane, we take preventive approach. We add a fake antenna diode next to 
 ###  OpenLANE Directory structure in detail
 
 OpenLANE comprises of many open source EDA tools. The aim of openLANE tool is to get RTl to GDSII flow.
-** Commands to invoke openLANE tool
+** Linuz command step by step
  cd Desktop/work/tools
+ ls -ltr
 cd openlane_working_dir
 cd pdks
 cd sky130A
 ls -ltr
+![2](https://github.com/user-attachments/assets/78b36992-dc30-47c6-bbc5-b35deb8ddb53)
+
+We are working with sky130A pdk.
 cd libs.ref
 ls -ltr
 cd ../
@@ -176,19 +180,25 @@ ls -ltr
 cd ../
 cd libs.ref
 ls -ltr
+![3](https://github.com/user-attachments/assets/d023e52c-f8e0-4b2b-b316-cf8085d4487a)
+
 cd sky130_fd_sc_hd
 ls -ltr
 cd lib
 ls -ltr
+![lib](https://github.com/user-attachments/assets/64f4c2fd-5776-4682-ae9d-e0dac91afdd0)
+
 cd ../
 cd lef
 cd ../
+![lef](https://github.com/user-attachments/assets/d2cce2cc-a99d-455c-8557-c73c592f1470)
+
 cd techlef
 cd ../../../../
 ls -ltr
 cd openlane
 clear
-
+![techlef](https://github.com/user-attachments/assets/7eed51a5-07d2-4cf2-a33a-7310942e374b)
 **Commands to invoke OpenLANE**
 Commands to get into openLANE directory and invoke openLANE:
 cd Desktop/work/tools
@@ -197,11 +207,13 @@ cd openlane
 docker
 ls -ltr
 ./flow.tcl -interactive
+![invokeopenlane](https://github.com/user-attachments/assets/5beecb49-e386-4f49-ac93-213869d8a80b)
 
 > Openlane is meant to automate RTL to GDS flow, so if we use ./flow.tcl without interaction, it will run the complete flow.
 >
 > Command to import all the packages
 > package require openlane 0.9
+![package](https://github.com/user-attachments/assets/0d5b3c44-47e3-4b41-933f-66cb33f30d13)
 
 Steps involved in preparing for the design process
 /openlane cd designs
@@ -214,17 +226,21 @@ cd ../
 less config.tcl % bypass any configuration that has been already done into a plane
 ls -ltr
 clear
+![confi tcl](https://github.com/user-attachments/assets/6edc0542-75f5-4561-a27f-6f24cbda7bfc)
 
 prep -design picorv32a %prepare file system to setting data for design
 
-### Review files after design preparation and run synthesis
+### ![prep](https://github.com/user-attachments/assets/61d751ed-0959-4e27-bbee-d81711c58e86)
+Review files after design preparation and run synthesis
 cd runs
 ls -ltr
 cd 12_08_10_49
 ls -ltr
 cd temp
 less merged.lef
-cd ../ cd results
+![ouputmerge lef](https://github.com/user-attachments/assets/8d2d0ccf-1f73-497e-a3ee-a34bd44ff1f1)
+cd ../
+ cd results
 cd synthesis
 cd ../../
 cd reports
