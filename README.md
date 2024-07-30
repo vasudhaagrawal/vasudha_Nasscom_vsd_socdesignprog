@@ -163,15 +163,18 @@ With OpenLane, we take preventive approach. We add a fake antenna diode next to 
 
 OpenLANE comprises of many open source EDA tools. The aim of openLANE tool is to get RTl to GDSII flow.
 ** Linuz command step by step
+'''
  cd Desktop/work/tools
  ls -ltr
 cd openlane_working_dir
 cd pdks
 cd sky130A
 ls -ltr
+'''
 ![2](https://github.com/user-attachments/assets/78b36992-dc30-47c6-bbc5-b35deb8ddb53)
 
 We are working with sky130A pdk.
+'''
 cd libs.ref
 ls -ltr
 cd ../
@@ -180,33 +183,39 @@ ls -ltr
 cd ../
 cd libs.ref
 ls -ltr
+'''
 ![3](https://github.com/user-attachments/assets/d023e52c-f8e0-4b2b-b316-cf8085d4487a)
-
+'''
 cd sky130_fd_sc_hd
 ls -ltr
 cd lib
 ls -ltr
-![lib](https://github.com/user-attachments/assets/64f4c2fd-5776-4682-ae9d-e0dac91afdd0)
-
 cd ../
 cd lef
 cd ../
-![lef](https://github.com/user-attachments/assets/d2cce2cc-a99d-455c-8557-c73c592f1470)
-
 cd techlef
 cd ../../../../
 ls -ltr
 cd openlane
 clear
+'''
+![lib](https://github.com/user-attachments/assets/64f4c2fd-5776-4682-ae9d-e0dac91afdd0)
+
+
+![lef](https://github.com/user-attachments/assets/d2cce2cc-a99d-455c-8557-c73c592f1470)
+
+
 ![techlef](https://github.com/user-attachments/assets/7eed51a5-07d2-4cf2-a33a-7310942e374b)
 **Commands to invoke OpenLANE**
 Commands to get into openLANE directory and invoke openLANE:
+'''
 cd Desktop/work/tools
 cd openlane_working_dir
 cd openlane
 docker
 ls -ltr
 ./flow.tcl -interactive
+'''
 ![invokeopenlane](https://github.com/user-attachments/assets/5beecb49-e386-4f49-ac93-213869d8a80b)
 
 > Openlane is meant to automate RTL to GDS flow, so if we use ./flow.tcl without interaction, it will run the complete flow.
@@ -217,6 +226,7 @@ ls -ltr
 
 Steps involved in preparing for the design process
 /openlane cd designs
+'''
 /ls -ltr
 picorv32a
 ls -ltr
@@ -226,19 +236,23 @@ cd ../
 less config.tcl % bypass any configuration that has been already done into a plane
 ls -ltr
 clear
+'''
 ![confi tcl](https://github.com/user-attachments/assets/6edc0542-75f5-4561-a27f-6f24cbda7bfc)
 
 prep -design picorv32a %prepare file system to setting data for design
 
 ### ![prep](https://github.com/user-attachments/assets/61d751ed-0959-4e27-bbee-d81711c58e86)
 Review files after design preparation and run synthesis
+'''
 cd runs
 ls -ltr
 cd 12_08_10_49
 ls -ltr
 cd temp
 less merged.lef
+'''
 ![ouputmerge lef](https://github.com/user-attachments/assets/8d2d0ccf-1f73-497e-a3ee-a34bd44ff1f1)
+'''
 cd ../
  cd results
 cd synthesis
@@ -247,11 +261,12 @@ cd reports
 cd ../
 less config.tcl
 less cmd.log
-
+'''
+'''
 run_synthesis
-
+'''
 ### Steps to characterize synthesis results
-
+'''
 cd results
 ls -ltr
 cd synthesis
@@ -262,6 +277,7 @@ cd reports
 ls -ltr
 cd synthesis
 ls -ltr
+'''
 ![flopratio](https://github.com/user-attachments/assets/54a3d1eb-5504-494f-85da-c9a4c837b08d)
 
 ## Day 2 - Good floorplan vs bad floorplan and introduction to library cells
