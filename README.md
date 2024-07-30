@@ -1,4 +1,4 @@
-# vasudha_Nasscom_vsd_socdesignprog
+![1](https://github.com/user-attachments/assets/54c3d75a-ba5c-4542-a396-357abd38cfd3)![3](https://github.com/user-attachments/assets/daea09ae-9d68-4d27-987f-5db4bd17fb50)# vasudha_Nasscom_vsd_socdesignprog
 ##  Day-1 Inception of open source EDA, openLANE, sky130
 ## How to talk to computers
 ### In Introduction to QFN-48 Package, chip, pads, core, die and IPs
@@ -262,6 +262,7 @@ cd reports
 ls -ltr
 cd synthesis
 ls -ltr
+![flopratio](https://github.com/user-attachments/assets/54a3d1eb-5504-494f-85da-c9a4c837b08d)
 
 ## Day 2 - Good floorplan vs bad floorplan and introduction to library cells
 ## Chip Floor planning considerations
@@ -271,15 +272,21 @@ ls -ltr
 > * Ensue the aspect ratio aligns with design and manufacturing requirements for optimal layout. All the logical cell should be inside the core.
 >
 > If logical cell occupies the complete area of the core as shown below then there is 100 % utilization.
->
+>![1](https://github.com/user-attachments/assets/4a5f1a6c-704e-4860-9e16-4ce78d78bacb)
+
 > Utilization factor= Area occupied by netlist/Total area of the core.
->
+>![3](https://github.com/user-attachments/assets/6418cd08-48e6-460a-b23a-266ddbc5d41a)
 > In case of 100 % utilization, utilization factor=1.
+>
+> ![4](https://github.com/user-attachments/assets/f8f10ece-fc29-4271-bc4d-7d2a73c85c16)
+
 > Practically, we don't go for 100% utilizatio, we go for 50-60% utilization and utilization factor=0.5-0.6.
 >
 > **Aspect ratio=Height/width**
 > when AR=1; it signifies the chip is sqare shape.
 >      AR &ne; 1; chip is rectangular shape.
+
+![5](https://github.com/user-attachments/assets/6b147b71-b50d-4fa1-a2e6-85261f4f24e3)
 
 **2.Define the location of pre placed cell**
 > * Placement of IP's/block in a user defined location in chip before automated placement and routing are called pre-placed cells.
@@ -287,20 +294,32 @@ ls -ltr
 > * Pre-placed cells are macros or IP's which is a piece of complex logic that can be reused multiple times.
 > * The arrangement of the IP's in chip is referred as floor planning.
 > * Preplaced cells surroud with decoupling capacitors.
+>
 
+![3](https://github.com/user-attachments/assets/f8440805-e8c1-4c5d-9c87-f4c9796d5c1c)
+
+ ![5](https://github.com/user-attachments/assets/8ce9775c-11b8-4948-8e1c-661c93db0b2f)
+ 
  **Decoupling capacitors**
 > * Place capacitors around pre-placed cells to stabilize power and mitigate noise interference.
 > * Ensure adequate coverage to prevent power supply issues and maintain signal integrity.
+>   
+![4](https://github.com/user-attachments/assets/79a2a63c-2eba-45de-b524-58d1d620f59c)
 
 **Power planning**
 > * It involves creating a robust power distribution network (PDN) that ensures all parts of the chip receive adequate power while minimizing power noise, voltage drops (IR drop).
 > * Multiple Vdd and Gnd is placed in the chip to solve the problem of voltage droop and voltage bump due to single power supply line.
 
+![1](https://github.com/user-attachments/assets/2b060afd-0387-43ca-9d50-140273e8ee2d)
+
 **Pin placement**
 > * Pin placement refers to the strategic positioning of input/output (I/O) pins around the periphery of the IC or within specific regions in the case of advanced packaging or multi-die systems.
 > * Proper pin placement ensure signal integrity, routing efficiency, power distribution, thermal management, and manufacturing considerations.
+>
+>   ![3](https://github.com/user-attachments/assets/ba964bb9-e4fa-4acc-8ff7-e9aae8831aa9)
+
 
 **Logical cell placement blockage**
 > * Logical cell placement blockage refers to regions within the IC layout where standard cells or logical cells are restricted from being placed as it is reserved for the pin placement.
 
-
+![2](https://github.com/user-attachments/assets/198de248-732d-40e6-a3a3-9938ce762a6d)
