@@ -1,4 +1,4 @@
-![1](https://github.com/user-attachments/assets/54c3d75a-ba5c-4542-a396-357abd38cfd3)![3](https://github.com/user-attachments/assets/daea09ae-9d68-4d27-987f-5db4bd17fb50)# vasudha_Nasscom_vsd_socdesignprog
+# vasudha_Nasscom_vsd_socdesignprog
 ##  Day-1 Inception of open source EDA, openLANE, sky130
 ## How to talk to computers
 ### In Introduction to QFN-48 Package, chip, pads, core, die and IPs
