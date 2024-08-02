@@ -423,8 +423,25 @@ Cell design flow is being divided into three part.
 Next step is to design the circuit based on the available inputs. Design invloves circuit design, layout design and characterization.
 First step in circuit design is to implement the function and then is to get PMOS and NMOS network graph.
 ![cktdesign](https://github.com/user-attachments/assets/ca38b65a-f41a-4992-addc-b4ba030426db)
+
+Typical output of the circuit is called CDL (Circuit Description Language) file. Next step is layout design. First step is to get the function implemented through MOS transistors (NMOS and PMOS). Next step is to get the PMOS and NMOS network graph out of the circuit design. 
+
+![layout design'](https://github.com/user-attachments/assets/c20b7b5a-98fc-406b-98ba-5450941d4935)
+
+Next step is to get the Euler's path. It is the path which is being traced only once
+
 ![layout design](https://github.com/user-attachments/assets/f2455736-dace-4e93-b643-eb4bd1820488)
+
+.Then draw stick diagram out of Euler's path. Stick diagram is derived from the circuit diagram.
 
 ![layout design1](https://github.com/user-attachments/assets/ba584b57-15f7-490e-88e9-1915f0b00440)
 
+Next step is to convert the stick diagram into layout adhering to the rules we got from the input, DRC rules given by the foundary and user defined specification given by the top level user.
 ![layout design2](https://github.com/user-attachments/assets/a6b57d9c-e010-4739-bb4d-1bb14b811158)
+
+Final step is to extract the paracitics out the layout and characterize it in terms of the timing. Output of the layout is in GDSii format, LEF basically decides the width and the height of the cells and extracted spice netlist (resistance/capacitance) or parasitics of each and every elements extracted out of the layout. That is called the spice net list.
+
+
+![5](https://github.com/user-attachments/assets/41813225-6e8a-40d0-bffc-6577b4467066)
+
+ Next step is characterization. Characterization helps to get the timing, noise and power information.
