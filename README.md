@@ -445,3 +445,21 @@ Final step is to extract the paracitics out the layout and characterize it in te
 ![5](https://github.com/user-attachments/assets/41813225-6e8a-40d0-bffc-6577b4467066)
 
  Next step is characterization. Characterization helps to get the timing, noise and power information.
+
+## Sky130 Day 3 - Design library cell using Magic Layout and ngspice characterization
+### Labs for CMOS inverter ngspice simulations
+### IO placer revision
+
+
+**Spice deck creation and simulations**
+|  ![1](https://github.com/user-attachments/assets/4baeccd2-c27c-442e-abf9-079a6b52348b)|![2](https://github.com/user-attachments/assets/3b4522a7-9171-42a0-a36d-b5d4ff29035a)
+
+|
+|-------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------|
+
+| |  |
+|-------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------|
+
+|  |  |
+|-------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------|
+
