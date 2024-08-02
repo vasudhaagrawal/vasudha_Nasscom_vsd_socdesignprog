@@ -469,3 +469,9 @@ Final step is to extract the paracitics out the layout and characterize it in te
 ### 16 Mask CMOS Process ###
 
 1. Selecting a substrate
+   * P type Si substrate
+
+2. Create active region
+   * Grow 40 nm SiO2 on Si substrate
+   * 80 nm Si3N4  onto SiO2
+   * Define the active regions using photolithography using mask 1 and etching to isolate transistors
