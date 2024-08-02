@@ -163,14 +163,21 @@ With OpenLane, we take preventive approach. We add a fake antenna diode next to 
 
 OpenLANE comprises of many open source EDA tools. The aim of openLANE tool is to get RTl to GDSII flow.
 ** Linuz command step by step
-'''
+        cd Desktop/work/tools               # Navigate to the tools directory
+        cd openlane_working_dir             # Move to the openlane_working_dir directory
+        cd pdks/sky130A/                    # Navigate to the sky130A directory within pdks
+        ls -ltr                             # List files in sky130A directory (reverse chronological order)
+        cd libs.ref                         # all process specific files
+        ls -ltr                             # List files in libs.ref directory
+        cd ../libs.tech                     # Move to libs.tech directory (files specific to the tools)
+        ls -ltr                             # List files in libs.tech directory
  cd Desktop/work/tools
  ls -ltr
 cd openlane_working_dir
 cd pdks
 cd sky130A
 ls -ltr
-'''
+
 ![2](https://github.com/user-attachments/assets/78b36992-dc30-47c6-bbc5-b35deb8ddb53)
 
 We are working with sky130A pdk.
