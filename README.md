@@ -163,31 +163,34 @@ With OpenLane, we take preventive approach. We add a fake antenna diode next to 
 
 OpenLANE comprises of many open source EDA tools. The aim of openLANE tool is to get RTl to GDSII flow.
 ** Linuz command step by step
-        ```
-  cd Desktop/work/tools               # Navigate to the tools directory
-        cd openlane_working_dir             # Move to the openlane_working_dir directory
-        cd pdks/sky130A/                    # Navigate to the sky130A directory within pdks
-        ls -ltr                             # List files in sky130A directory (reverse chronological order)
-        cd libs.ref                         # all process specific files
-        ls -ltr                             # List files in libs.ref directory
-        cd ../libs.tech                     # Move to libs.tech directory (files specific to the tools)
-        ls -ltr                             # List files in libs.tech directory
-        ```
+   ```
+   cd Desktop/work/tools               # Navigate to the tools directory
+  cd openlane_working_dir             # Move to the openlane_working_dir directory
+  cd pdks/sky130A/                    # Navigate to the sky130A directory within pdks
+  ls -ltr                             # List files in sky130A directory (reverse chronological order)
+  cd libs.ref                         # all process specific files
+  ls -ltr                             # List files in libs.ref directory
+  cd ../libs.tech                     # Move to libs.tech directory (files specific to the tools)
+  ls -ltr                             # List files in libs.tech directory
+  ```
+  
       
 
 ![2](https://github.com/user-attachments/assets/78b36992-dc30-47c6-bbc5-b35deb8ddb53)
 
 We are working with sky130A pdk.
-          ```
-        cd libs.ref                         # all process specific files
-        ls -ltr                             # List files in libs.ref directory
-        cd ../libs.tech                     # Move to libs.tech directory (files specific to the tools)
-        ls -ltr                             # List files in libs.tech director
-        cd ../
-        cd libs.ref
-       ls -ltr
-       ```
+```
+cd libs.ref                         # all process specific files
+ls -ltr                             # List files in libs.ref directory
+cd ../libs.tech                     # Move to libs.tech directory (files specific to the tools)
+ls -ltr                             # List files in libs.tech director
+cd ../
+cd libs.ref
+ls -ltr
+```
+
 ![3](https://github.com/user-attachments/assets/d023e52c-f8e0-4b2b-b316-cf8085d4487a)
+
 ```
 cd sky130_fd_sc_hd
 ls -ltr
@@ -301,11 +304,13 @@ ls -ltr
 > ![4](https://github.com/user-attachments/assets/f8f10ece-fc29-4271-bc4d-7d2a73c85c16)
 
 > Practically, we don't go for 100% utilizatio, we go for 50-60% utilization and utilization factor=0.5-0.6.
->```
+
+```
 > **Aspect ratio=Height/width**
 > when AR=1; it signifies the chip is sqare shape.
 >      AR &ne; 1; chip is rectangular shape.
 ```
+
 ![5](https://github.com/user-attachments/assets/6b147b71-b50d-4fa1-a2e6-85261f4f24e3)
 
 **2.Define the location of pre placed cell**
@@ -344,3 +349,82 @@ ls -ltr
 
 ![2](https://github.com/user-attachments/assets/198de248-732d-40e6-a3a3-9938ce762a6d)
 
+ **Commands to run floorplan**
+
+ ```
+run_floorplan  # in openlane prompt
+```
+Commands to see floorplan layout in magic tool
+![layout](https://github.com/user-attachments/assets/bf49dc92-083c-4e96-8b4f-74ed72bb60da)
+
+Floorplan def in magic tool
+```
+cd Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/runs/30-07_09-24/results/floorplan/
+magic -T /home/vsduser/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs.tech/magic/sky130A.tech lef read ../../tmp/merged.lef def read picorv32a.floorplan.def &
+```
+![zoomin_1](https://github.com/user-attachments/assets/d3621b58-7f2e-4e41-a48d-cca8908dc6a1)
+
+**Library binding and placement**
+First step in placement and routing is to bind the netlist with the physical cells. Library contains the cells of different shapes and sizes and delay information. 
+As shown in the below diagram shape of the gates define its functionality but in reality they are represented in the form of blocks of different sizes. The diagram below shows th eplacement of cell in the floorplan.
+
+![1](https://github.com/user-attachments/assets/e8fc4b27-d4e4-4fd1-b73c-13024517047c)
+
+![2](https://github.com/user-attachments/assets/321e34b0-5937-4cdf-ad06-1061e8a02927)
+
+![3](https://github.com/user-attachments/assets/ef4adc7c-7f11-4f81-b441-67c211a3c18a)
+
+
+![3](https://github.com/user-attachments/assets/2ee5cc46-bb44-4676-8c90-d33a9ead1337)
+
+
+**Placement**
+The next step after library binding is to place all the cells onto the floorplan keeping in mind it should not affect the pre-placed cell.
+![4](https://github.com/user-attachments/assets/24b161d1-a838-4d43-8e84-70937dd7f393)
+
+Command to run placement in openlane
+```
+run_placement
+```
+![placement](https://github.com/user-attachments/assets/685bb9fa-c305-4192-aaef-abfc88b023fc)
+
+To open generated placement def in magic tool
+```
+cd Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/runs/30-07_09-24/results/placement/
+
+magic -T /home/vsduser/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs.tech/magic/sky130A.tech lef read ../../tmp/merged.lef def read picorv32a.placement.def &
+
+```
+![placement_1](https://github.com/user-attachments/assets/179f9b3e-99b0-4439-ac14-381592187e18)
+
+**Cell design and characterization**
+
+If we have placed and routed chip as shown in diagram. It represents placement and routed version of logical synthesis step. The cells placed is referred to as standard cells.
+
+![1'](https://github.com/user-attachments/assets/1230efdb-2994-41f6-8a79-65ae2cd9cbc4)
+
+
+Standard cells are being place in the library. Library consists of cells with different functionality, different sizes and different threshold voltages.
+![1](https://github.com/user-attachments/assets/9c50c082-57c9-4d84-b830-87ab97272f51)
+
+Ceonsidering one of the invertor let's see the cell design flow.  ary.
+
+Cell design flow is being divided into three part.
+1. Inputs
+2. Design Steps
+3. Outputs
+
+   Lets understand the step by step cell design flow from below images.
+   
+   We have to design the invertor based on the PDKs given by the library.
+![2](https://github.com/user-attachments/assets/2263c68b-0025-4c64-89b1-185bead304b1)
+![3](https://github.com/user-attachments/assets/83e2708e-ead8-46a3-9dc8-1afecf75def1)
+
+Next step is to design the circuit based on the available inputs. Design invloves circuit design, layout design and characterization.
+First step in circuit design is to implement the function and then is to get PMOS and NMOS network graph.
+![cktdesign](https://github.com/user-attachments/assets/ca38b65a-f41a-4992-addc-b4ba030426db)
+![layout design](https://github.com/user-attachments/assets/f2455736-dace-4e93-b643-eb4bd1820488)
+
+![layout design1](https://github.com/user-attachments/assets/ba584b57-15f7-490e-88e9-1915f0b00440)
+
+![layout design2](https://github.com/user-attachments/assets/a6b57d9c-e010-4739-bb4d-1bb14b811158)
