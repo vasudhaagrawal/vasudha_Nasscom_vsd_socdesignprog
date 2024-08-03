@@ -470,7 +470,7 @@ run_floorplan
 ```
 cd Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/runs/30-07_09-24/results/floorplan/
 magic -T /home/vsduser/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs.tech/magic/sky130A.tech lef read ../../tmp/merged.lef def read picorv32a.floorplan.def &
-```
+
 
 **Spice deck creation and simulations**
 
@@ -487,10 +487,37 @@ magic -T /home/vsduser/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs
 |-------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------|
 
 **Lab steps to git clone vsdstdcelldesign**
+In openlane, we will gitclone one of the repository 
+```
+cd Desktop/work/tools/openlane_working_dir/openlane      # change directory to openlane
+ https://github.com/nickson-jose/vsdstdcelldesign.git   #clone the repository with custom invertor design
+ls -ltr
+cd vsdstdcelldesign                                     # Change into repository directory
+ls -ltr                                                 # open vsd standard cell
+pwd                                                     # gives the location to where we will copy
+ ```
+![1](https://github.com/user-attachments/assets/9bd6b2b8-2f1a-4ec8-9fe5-5f321f6a4eae)
+![2](https://github.com/user-attachments/assets/b31bf4c1-45a8-4029-85b4-1b625ff1f4c0)
 
+Now we open the mag file. But before this we need to have the magic tech file to open this.
 
+# Copy magic tech file to the repo directory for easy access
+cd pdks/sky130A/libs.tech/magic    #it is in the openlane_working_dir
+ls -ltr
+cp sky130A.tech /home/vsduser/Desktop/work/tools/openlane_working_dir/openlane/vsdstdcelldesign
+![3](https://github.com/user-attachments/assets/ad5b5f58-00e4-452c-8602-1858c81ad91d)
 
-In openlane, we will gitclone one of the repository
+In vsdstdcelldesign directory 
+
+```
+ls -ltr
+magic -T sky130A.tech sky130_inv.magic &    
+```
+![4](https://github.com/user-attachments/assets/09ff6084-4cf3-4c5b-b960-0f8cf88740ea)
+![5](https://github.com/user-attachments/assets/81bd6561-6d61-462c-a481-62434b6f9537)
+
+![6](https://github.com/user-attachments/assets/23ca72ca-9598-455f-b927-0410b3ab17a6)
+
 ### 16 Mask CMOS Process ###
 
 1. Selecting a substrate
