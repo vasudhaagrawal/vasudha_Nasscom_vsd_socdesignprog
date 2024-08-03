@@ -527,3 +527,13 @@ magic -T sky130A.tech sky130_inv.magic &
    * Grow 40 nm SiO2 on Si substrate
    * 80 nm Si3N4  onto SiO2
    * Define the active regions using photolithography using mask 1 and etching to isolate transistors
+
+3. Formation of N well and P well
+4. Formation of gate terminal
+* low energry implant to attain required doping concentration at the surface. Doping concentration depaends on the threshold voltage.
+* make the polyisilicon gates low resistance by aading additional n type impurities.
+5. Lightly doped drain (LDD) formation
+
+6. 
+7. 
+8. 
