@@ -448,11 +448,31 @@ Final step is to extract the paracitics out the layout and characterize it in te
 
 ## Sky130 Day 3 - Design library cell using Magic Layout and ngspice characterization
 ### Labs for CMOS inverter ngspice simulations
-### IO placer revision
+** IO placer revision**
 
+In openlane prompt 
+
+```
+run_floorplan
+```
+then Floorplan def in magic tool to see the cell configuration. 
+
+We see that pins are equidistant from each other. If we want to change to some other i/o pin strategies. So there are four strategies that are supported by io placer. io placer is one the open source EDA tools which is used to place the i/o pins and all the core. So for this in /openlane/congiguration/ folder README.MD file which has the description of all the switches.
+
+/openlane/configuration/less README.md    # it has the description of all the switches
+/openlane/configuration/floorplan.tcl     # setting the ip pin strategies
+
+copy the variable ::env(FP_IO_MODE) to open lane prompt and execute the command
+
+set ::env(FP_IO_MODE) 2 
+run_floorplan
+```
+```
+cd Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/runs/30-07_09-24/results/floorplan/
+magic -T /home/vsduser/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs.tech/magic/sky130A.tech lef read ../../tmp/merged.lef def read picorv32a.floorplan.def &
+```
 
 **Spice deck creation and simulations**
-
 
 | ![1](https://github.com/user-attachments/assets/4baeccd2-c27c-442e-abf9-079a6b52348b) |![2](https://github.com/user-attachments/assets/3b4522a7-9171-42a0-a36d-b5d4ff29035a)  |
 |-------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------|
@@ -466,6 +486,11 @@ Final step is to extract the paracitics out the layout and characterize it in te
 | ![8](https://github.com/user-attachments/assets/ccf04eaf-04fe-47d1-8419-81b31b6a2c6c) |![7](https://github.com/user-attachments/assets/65de310f-d700-4a70-ba8c-a721711ddf96) |
 |-------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------|
 
+**Lab steps to git clone vsdstdcelldesign**
+
+
+
+In openlane, we will gitclone one of the repository
 ### 16 Mask CMOS Process ###
 
 1. Selecting a substrate
