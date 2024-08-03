@@ -520,6 +520,23 @@ magic -T sky130A.tech sky130_inv.magic &
 
 ### 16 Mask CMOS Process ###
 
+| ![1](https://github.com/user-attachments/assets/93c87b42-499d-44b6-b4e5-9801d39522d2)| ![3](https://github.com/user-attachments/assets/fd94b128-d38d-4c0d-af31-c5fe8e57ce1c)|
+|-------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------|
+
+| ![5](https://github.com/user-attachments/assets/66fa2acc-382e-4db5-9358-bf999960340f)| ![7](https://github.com/user-attachments/assets/e1cd574b-f825-49a2-8c7f-43070394641d) | 
+|-------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------|
+
+|![pwell creation2](https://github.com/user-attachments/assets/9a5a28b5-1863-41da-8c54-bcd24951fdc3)| ![n well creation](https://github.com/user-attachments/assets/2f82cf53-e50c-45f2-b7b9-e086e61e2ae4) |
+|-------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------|
+
+|![8](https://github.com/user-attachments/assets/66b30e83-6f4d-45c5-982f-5816681b5427)| ![6](https://github.com/user-attachments/assets/fd2928b7-d147-42b9-bd27-2f92edd08f6b)|
+|-------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------|
+
+|![sidewall spacer1](https://github.com/user-attachments/assets/cb711bc4-0685-42e4-a9a5-968931fab74c)| ![7](https://github.com/user-attachments/assets/23e3b19a-da70-49b4-a8fa-6e68c3f2723f)|
+|-------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------|
+
+|![10](https://github.com/user-attachments/assets/9e7dca8c-9d0e-4b7f-9b1b-f5ed3a8aefcb)| ![16](https://github.com/user-attachments/assets/79905093-c662-4a98-9ee1-93a68e04ec67)|
+|-------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------|
 1. Selecting a substrate
    * P type Si substrate
 
@@ -534,6 +551,7 @@ magic -T sky130A.tech sky130_inv.magic &
 * make the polyisilicon gates low resistance by aading additional n type impurities.
 5. Lightly doped drain (LDD) formation
 
-6. 
-7. 
-8. 
+6. Source and drain formation
+7. Local interconnect formation
+8. Higher level metal formation
+
