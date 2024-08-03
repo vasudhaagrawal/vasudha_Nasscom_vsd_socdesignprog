@@ -555,3 +555,4 @@ magic -T sky130A.tech sky130_inv.magic &
 7. Local interconnect formation
 8. Higher level metal formation
 
+###  Lab introduction to Sky130 basic layers layout and LEF using inverter
