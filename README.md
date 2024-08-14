@@ -518,6 +518,8 @@ magic -T sky130A.tech sky130_inv.magic &
 
 ![6](https://github.com/user-attachments/assets/23ca72ca-9598-455f-b927-0410b3ab17a6)
 
+
+
 ### 16 Mask CMOS Process ###
 
 | ![1](https://github.com/user-attachments/assets/93c87b42-499d-44b6-b4e5-9801d39522d2)| ![3](https://github.com/user-attachments/assets/fd94b128-d38d-4c0d-af31-c5fe8e57ce1c)|
@@ -538,13 +540,7 @@ magic -T sky130A.tech sky130_inv.magic &
 |![10](https://github.com/user-attachments/assets/9e7dca8c-9d0e-4b7f-9b1b-f5ed3a8aefcb)| ![16](https://github.com/user-attachments/assets/79905093-c662-4a98-9ee1-93a68e04ec67)|
 |-------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------|
 1. Selecting a substrate
-   * P type Si substrate
-
 2. Create active region
-   * Grow 40 nm SiO2 on Si substrate
-   * 80 nm Si3N4  onto SiO2
-   * Define the active regions using photolithography using mask 1 and etching to isolate transistors
-
 3. Formation of N well and P well
 4. Formation of gate terminal
 * low energry implant to attain required doping concentration at the surface. Doping concentration depaends on the threshold voltage.
@@ -555,4 +551,26 @@ magic -T sky130A.tech sky130_inv.magic &
 7. Local interconnect formation
 8. Higher level metal formation
 
+  ## Sky130 tech file
+  **SPICE extraction of inverter in magic**
+  
+![ext2spice1](https://github.com/user-attachments/assets/c60aafcc-9bf3-469a-81fa-5e02ac88981d)
+
+```
+pwd
+
+# Extraction command to extract to .ext format
+extract all
+
+# Before converting ext to spice this command enable the parasitic extraction also
+ext2spice cthresh 0 rthresh 0
+
+# Converting to ext to spice
+ext2spice
+```
+![runngspice](https://github.com/user-attachments/assets/b9fb6cb2-bc09-4213-b7b5-0a7788138697)
+Creation of std cell layout and extract spice netlist Spice File
+![4](https://github.com/user-attachments/assets/7c555233-027f-4ac0-9e43-da9b650a49be)
+
 ###  Lab introduction to Sky130 basic layers layout and LEF using inverter
+
