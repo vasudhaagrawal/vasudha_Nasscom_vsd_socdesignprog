@@ -572,5 +572,38 @@ ext2spice
 Creation of std cell layout and extract spice netlist Spice File
 ![4](https://github.com/user-attachments/assets/7c555233-027f-4ac0-9e43-da9b650a49be)
 
-###  Lab introduction to Sky130 basic layers layout and LEF using inverter
+![2_changingcload](https://github.com/user-attachments/assets/0057489b-1440-4ece-be68-7c3b255cafba)
 
+
+###  Lab introduction to Sky130 basic layers layout and LEF using inverter
+![3](https://github.com/user-attachments/assets/eb1ddacd-94b5-4005-9fbf-348a6a67f93a)
+
+![4](https://github.com/user-attachments/assets/7d4cfa65-8171-4243-a4d9-b522b0cbf633)
+![5](https://github.com/user-attachments/assets/0583725d-5eb2-462d-b8cf-4a190bee2e72)
+![rise transition graph](https://github.com/user-attachments/assets/f527cb37-26ae-4ff6-b932-f4a3bccf29aa)
+
+![rise transition value](https://github.com/user-attachments/assets/c487248c-d69b-4089-998d-9ea5e9c5fb5a)
+
+
+![fall time 20per](https://github.com/user-attachments/assets/7e70fbb4-d42d-4e6f-b958-01bf3d2a55c7)
+![falltime80per](https://github.com/user-attachments/assets/08af5e70-c03e-4a0a-b464-7d21d87365b1)
+![falltime](https://github.com/user-attachments/assets/734f1d91-d4db-46cd-b2a6-5c7b04717881)
+![cellfalldelay](https://github.com/user-attachments/assets/200280ec-c218-48f4-8206-9a864d54d248)
+![cellrisedelay](https://github.com/user-attachments/assets/9b0ff42b-00e6-4eae-877a-385da8b46b71)
+
+**Steps to load skyTechrules**
+
+![1](https://github.com/user-attachments/assets/d12d3e0b-a9fe-4e83-90e1-6ad72f734765)
+
+![2](https://github.com/user-attachments/assets/dc5ac898-7384-435e-aeca-41773782ed43)
+
+
+![met3 mag](https://github.com/user-attachments/assets/f836062f-20ff-4780-a480-022de14a3e8c)
+![via3](https://github.com/user-attachments/assets/00e49fd8-3997-434b-ad26-88a875cfed2f)
+
+**Poly.9**
+
+![1](https://github.com/user-attachments/assets/dae4e0a7-1772-4605-bffe-55950248c99e)
+![2](https://github.com/user-attachments/assets/bc019bfa-7c3c-4dfa-8fe4-9b37d5d071c9)
+![after correction](https://github.com/user-attachments/assets/754f1319-cb9e-4d6d-a41d-bdb4baa57914)
+![correction](https://github.com/user-attachments/assets/5b78cc89-04e4-40b1-855f-44feafb1efe0)
