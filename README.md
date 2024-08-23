@@ -503,6 +503,20 @@ magic -T /home/vsduser/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs
 
 | ![8](https://github.com/user-attachments/assets/ccf04eaf-04fe-47d1-8419-81b31b6a2c6c) |![7](https://github.com/user-attachments/assets/65de310f-d700-4a70-ba8c-a721711ddf96) |
 |-------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------|
+**Inverter characteristics**
+
+**Static Characteristics**
+Switching Threshold (Vth): The voltage at which the inverter transitions from the high state (logic 1) to the low state (logic 0).
+
+Input Low Voltage (Vil): The maximum input voltage considered as logic 0.
+
+Input High Voltage (Vih): The minimum input voltage considered as logic 1.
+
+Output Low Voltage (Vol): The voltage at which the output transitions from high to low.
+
+Output High Voltage (Voh): The voltage at which the output transitions from low to high.
+
+Noise Margins: The voltage range between Vil and Vol (low noise margin) and between Vih and Voh (high noise margin).
 
 **Lab steps to git clone vsdstdcelldesign**
 In openlane, we will gitclone one of the repository 
