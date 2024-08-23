@@ -518,6 +518,14 @@ Output High Voltage (Voh): The voltage at which the output transitions from low 
 
 Noise Margins: The voltage range between Vil and Vol (low noise margin) and between Vih and Voh (high noise margin).
 
+**DYNAMIC CHARACTERISTICS**
+
+Propagation Delays: The duration required for the output to respond after a change in the input.
+
+Rise Time (tr): The time it takes for the output to move from the low voltage level (Vol) to the high voltage level (Voh).
+
+Fall Time (tf): The time it takes for the output to move from the high voltage level (Voh) to the low voltage level (Vol).
+
 **Lab steps to git clone vsdstdcelldesign**
 In openlane, we will gitclone one of the repository 
 ```
