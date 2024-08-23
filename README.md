@@ -631,7 +631,31 @@ Creation of std cell layout and extract spice netlist Spice File
 ![cellfalldelay](https://github.com/user-attachments/assets/200280ec-c218-48f4-8206-9a864d54d248)
 ![cellrisedelay](https://github.com/user-attachments/assets/9b0ff42b-00e6-4eae-877a-385da8b46b71)
 
-**Steps to load skyTechrules**
+**Lab introduction to magic and Steps to load skyTechrules**
+
+Topics:
++ In depth overview of magic's drc emgine
++ Introduction to google/skywater DRC engine
++ Lab warmup excercise: Fix or create a simple rule error
++ Lab main exercise: Fix or create a complex problem
+
+  website: www.opencircuitdesogn.com/magic
+
+  + Look at magic tutorial 2 and 6. See magic commands.
+  + See technology files
+  + Magic technology gile menu
+  + See cifoutput section and Drc section
+  + In table of contents see DRC section
+  + See documentation Fabrication technology -----> google ----->skywater.
+
+**Lab introduction to sky130 pdks and steps to download lans**
+pdk information can be found in https://github.com/google/skywater.pdk
+
+and documentation can be found in https:// github.com/google/skywarwepdk/sky130A
+ 
+    
+
+
 
 ![1](https://github.com/user-attachments/assets/d12d3e0b-a9fe-4e83-90e1-6ad72f734765)
 
