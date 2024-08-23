@@ -364,7 +364,7 @@ magic -T /home/vsduser/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs
 ```
 ![zoomin_1](https://github.com/user-attachments/assets/d3621b58-7f2e-4e41-a48d-cca8908dc6a1)
 
-**Library binding and placement**
+## Library binding and placement
 First step in placement and routing is to bind the netlist with the physical cells. Library contains the cells of different shapes and sizes and delay information. 
 As shown in the below diagram shape of the gates define its functionality but in reality they are represented in the form of blocks of different sizes. The diagram below shows th eplacement of cell in the floorplan.
 
