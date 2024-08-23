@@ -446,6 +446,17 @@ Final step is to extract the paracitics out the layout and characterize it in te
 
  Next step is characterization. Characterization helps to get the timing, noise and power information.
 
+ **Characterization flow for buffer circuit**
+
+ 1. Read the model file
+ 2. Read the extracted spice netlist.
+ 3. Define/recognise the behay of the buffer.
+ 4. Read the sub circuit of the inverter.
+ 5. Attach the necessary power sources
+ 6. Apply the stimulus (inputs).
+ 7. Provide necessary output capacitance.
+ 8. Provide necessary simulation commands ( eg transient or dc)
+
 ## Sky130 Day 3 - Design library cell using Magic Layout and ngspice characterization
 ### Labs for CMOS inverter ngspice simulations
 ** IO placer revision**
