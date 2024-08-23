@@ -457,6 +457,13 @@ Final step is to extract the paracitics out the layout and characterize it in te
  7. Provide necessary output capacitance.
  8. Provide necessary simulation commands ( eg transient or dc)
 
+ ### General timing characterization parameters 
+
+ **Timing characterization and propagation delay**
+  GUNA is the software used for characterization. It Perform timing, power, and noise characterizations and validate the design against specifications.
+
+  
+
 ## Sky130 Day 3 - Design library cell using Magic Layout and ngspice characterization
 ### Labs for CMOS inverter ngspice simulations
 ** IO placer revision**
