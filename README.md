@@ -648,10 +648,32 @@ Topics:
   + In table of contents see DRC section
   + See documentation Fabrication technology -----> google ----->skywater.
 
-**Lab introduction to sky130 pdks and steps to download lans**
+**Lab introduction to sky130 pdks and steps to download labs**
 pdk information can be found in https://github.com/google/skywater.pdk
 
 and documentation can be found in https:// github.com/google/skywarwepdk/sky130A
+
+See skywater-pdk.readthedocs.io/en/main
+see periphery rules
+
+Lab contents URL:
+https://opencircuitdesign.com/open_pdks/archive/drc_tests.tgz
+
++ tar xfz drc
++ drc_tests.tgz.1
++ tar xfz drc_tests.tgz
++ cd drc
++ cd
++ drc_tests
++ ls -al
++ pwd
++ cd home/cad/design/drc_test
++ ls -al
++ vi -magicrc  # see technology file
++ magic -d XR
+
+**Lab introduction to magic and steps to load sky130tech rules
+
  
     
 
