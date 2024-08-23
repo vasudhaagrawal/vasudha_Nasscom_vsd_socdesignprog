@@ -558,9 +558,9 @@ magic -T sky130A.tech sky130_inv.magic &
 
 ![6](https://github.com/user-attachments/assets/23ca72ca-9598-455f-b927-0410b3ab17a6)
 
+**Press 'S' and then 'V' to centralize the layout.
 
-
-### 16 Mask CMOS Process ###
+### 16 Mask CMOS  Fabrication Process ###
 
 | ![1](https://github.com/user-attachments/assets/93c87b42-499d-44b6-b4e5-9801d39522d2)| ![3](https://github.com/user-attachments/assets/fd94b128-d38d-4c0d-af31-c5fe8e57ce1c)|
 |-------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------|
@@ -592,7 +592,7 @@ magic -T sky130A.tech sky130_inv.magic &
 8. Higher level metal formation
 
   ## Sky130 tech file
-  **SPICE extraction of inverter in magic**
+  **Lab steps to create final SPICE deck using sky130 tech**
   
 ![ext2spice1](https://github.com/user-attachments/assets/c60aafcc-9bf3-469a-81fa-5e02ac88981d)
 
