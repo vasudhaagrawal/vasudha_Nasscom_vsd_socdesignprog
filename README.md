@@ -672,7 +672,56 @@ https://opencircuitdesign.com/open_pdks/archive/drc_tests.tgz
 + vi -magicrc  # see technology file
 + magic -d XR
 
-**Lab introduction to magic and steps to load sky130tech rules
+**Lab introduction to magic and steps to load sky130tech rules**
+In tkcon2.3 main
++ Goto file---->open---->met3.mag
++ See met3 description in periphery (Type colon or semicolon)
++ In tkcon 2.3 main execute command
++ select area
++ goto m31
++ drc why
+
+magic uses u=many deried layers. To see this visually, draw a large area using a mouse pointer. Select the material from color box (via2)
+Type command
+```
+cif see VIA2 # select via 2 from color palate
+box
+snap int
+box
+```
+
+ **Lab exercise to fix poly.9 error in Sky130 tech file**
+ Commands
+ ```
+feed clear
+load poly # in magic load the file poly.mag
+```
+**check the website for rule description. Distance between the n poly and ploy should be 0.22 um but clearly it is not. so first define the error under
+drc_test directory
+
+```
+drc_test directory
+vi sky130A.tech
+/drc   #search for drc
+/poly.9 #search for poly.9
+```
+```
+Make corrections
+/aliases #check this section
+add allpolynonres in place of poly
+
+after correction check in magic
+
+tech load sky130A.tech
+drc why
+```
+
+
+
+
+
+
+
 
  
     
@@ -693,3 +742,5 @@ https://opencircuitdesign.com/open_pdks/archive/drc_tests.tgz
 ![2](https://github.com/user-attachments/assets/bc019bfa-7c3c-4dfa-8fe4-9b37d5d071c9)
 ![after correction](https://github.com/user-attachments/assets/754f1319-cb9e-4d6d-a41d-bdb4baa57914)
 ![correction](https://github.com/user-attachments/assets/5b78cc89-04e4-40b1-855f-44feafb1efe0)
+
+**Lab exercise to implement poly resister spacing to diff and tap**
