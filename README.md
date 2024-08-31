@@ -828,8 +828,26 @@ drc why
 ![7](https://github.com/user-attachments/assets/3fa376c6-54dd-4c4b-94fa-f81566356360)
 
 ![8_placement result](https://github.com/user-attachments/assets/1cfb6219-a51a-4d20-a02a-da5b3c804fa8)
-![9](https://github.com/user-attachments/assets/bb3c75ee-3419-4f01-be6f-c08789f94760)
-![10](https://github.com/user-attachments/assets/bc51c434-08ce-4098-b823-6f402736a241)
+![9](https://github.com/user-attachments/assets/8d73b83a-1794-4dff-a54c-9cd2df295dec)
 
 
+![10](https://github.com/user-attachments/assets/1528eb6b-0eaa-4a6a-8d1e-ae929f1f98a0)
 
+
+##  Timing analysis with ideal clocks using openSTA
+
+**L1 - Setup timing analysis and introduction to flip-flop setup time**
+
+![1](https://github.com/user-attachments/assets/8ee47b49-66d2-4afa-b74e-9adb716e5365)
+
+**L2 - Introduction to clock jitter and uncertainty**
+![1](https://github.com/user-attachments/assets/b660ae77-c2c1-494e-83df-62022f56ea4e)
+
+![2](https://github.com/user-attachments/assets/f6a2125e-c921-4f20-a527-702273ff4be0)
+
+![3](https://github.com/user-attachments/assets/31fae378-4eb2-412c-9e7c-7759232f8785)
+
+![4](https://github.com/user-attachments/assets/f27f84af-e3b6-497f-b5b9-18f1a783ee0d)
+![5](https://github.com/user-attachments/assets/90f6b7b4-dead-4c17-b04e-de80b0666985)
+![6](https://github.com/user-attachments/assets/d78552c7-7e0b-461a-9127-e40184c41d6b)
+![7](https://github.com/user-attachments/assets/db88c4ff-1f93-4a4b-9707-9cf1fe334e11)
