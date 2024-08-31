@@ -744,3 +744,92 @@ drc why
 ![correction](https://github.com/user-attachments/assets/5b78cc89-04e4-40b1-855f-44feafb1efe0)
 
 **Lab exercise to implement poly resister spacing to diff and tap**
+![before corrections](https://github.com/user-attachments/assets/3d59b4f6-7ff7-42f3-a1a8-1f59267b5d79)
+
+![after correction](https://github.com/user-attachments/assets/3bc1dcb0-e567-4795-a44f-68b1a1acbb1c)
+
+**Exercise to describe DRC error as geometrical construct**
+![load nwell](https://github.com/user-attachments/assets/6f0aaec8-a832-4885-b069-5a21d5fd516e)
+
+![1](https://github.com/user-attachments/assets/30ea1659-e002-49b7-9b14-670668b641ce)
+![2](https://github.com/user-attachments/assets/6ee6501b-6d19-4459-8b15-d2f14fd055d9)
+
+![3](https://github.com/user-attachments/assets/fce151c8-47f1-4f7e-8d51-daf527d42974)
+![4](https://github.com/user-attachments/assets/be0984b3-3fa1-4dab-9971-a46cb824ffea)
+![styledrc](https://github.com/user-attachments/assets/a1eb7e3b-460d-49a7-9cd8-73c29274ba16)
+
+** find missing or incorrect rules and fix them**
+
+![1](https://github.com/user-attachments/assets/bfe0be4d-ec74-4795-af0f-b5c561e3091f)
+![2](https://github.com/user-attachments/assets/37b8308d-a0aa-42b7-8a0e-f60a94a4b017)
+![3](https://github.com/user-attachments/assets/39ba29b3-e951-47c4-9c45-d0cc5ddc5f26)
+![4](https://github.com/user-attachments/assets/24029d8a-5021-4068-8ff9-e75b5bc57545)
+![5](https://github.com/user-attachments/assets/baced382-e029-482d-b9a3-258d218ac472)
+![6](https://github.com/user-attachments/assets/f55725e5-42c0-42f0-8175-394fca5c317b)
+
+
+## Day 4 - Pre-layout timing analysis and importance of good clock tree
+
+###  Timing modelling using delay tables
+
+**Lab steps to convert grid info to track inf**
+
+![1](https://github.com/user-attachments/assets/fced14b4-dcf0-44c5-bf25-fd1a8d133e1e)
+![1_1](https://github.com/user-attachments/assets/6b2b65eb-c7e4-44ac-9087-10d08ff85bcd)
+![2](https://github.com/user-attachments/assets/b99c36b3-6baf-4183-b7da-268124bdde34)
+![3](https://github.com/user-attachments/assets/0ba91365-e27c-423b-8fbc-e617fb4e86d1)
+![4](https://github.com/user-attachments/assets/6711b59c-9b4b-471e-81a3-9a3c680d1152)
+![5](https://github.com/user-attachments/assets/ce178c61-b16f-474e-b9b2-807207d0a3a8)
+
+**Lab steps to convert magic layout to std cell LEF**
+![1](https://github.com/user-attachments/assets/e0fb41f1-2323-4468-bebc-6ed5514c6785)
+
+![2](https://github.com/user-attachments/assets/e6765d91-d212-486e-8d50-583669bce0cf)
+
+![3](https://github.com/user-attachments/assets/de24efd4-ba01-4a9b-8127-40bec2e64bfc)
+
+![4](https://github.com/user-attachments/assets/ef0b49b0-91c2-42ce-b89f-d3d631e1ad18)
+
+**Introduction to timing libs and steps to include new cell in synthesis**
+![get path using pwd](https://github.com/user-attachments/assets/ee3016e7-5628-4342-9706-3a03d75422cd)
+![2copyleffile](https://github.com/user-attachments/assets/30958b96-23fd-4180-b71c-39e882bf1b6b)
+![3](ht![4](https://github.com/user-attachments/assets/f0cf4789-5ea3-41a5-ac3f-d904805e9220)
+![4](https://github.com/user-attachments/assets/065bd305-c6bc-41e0-99f9-b8df3d35d008)
+
+![5](https://github.com/user-attachments/assets/5dce7b58-a49a-48c8-869c-ab5a21bebc35)
+![6](https://github.com/user-attachments/assets/205ed859-3fb9-46ee-8a50-64345cd01ae2)
+![7](https://github.com/user-attachments/assets/1814bf4d-b326-43a8-a359-3085febf24c1)
+![8open config tcl](https://github.com/user-attachments/assets/99543be6-62b7-47e3-8519-2ac9f2d8795d)
+![9](https://github.com/user-attachments/assets/ae4f2db5-0a5c-409b-9966-fcad0f8817cc)
+![10 after modification](https://github.com/user-attachments/assets/3820e03e-8fbb-43c8-907c-fe0a783619fa)
+![11](https://github.com/user-attachments/assets/ef9a56ae-4af8-494c-b230-86cb2c289840)
+
+**Introduction to delay tables**
+![1](https://github.com/user-attachments/assets/5f360911-47b9-476a-acbd-4a5386d19eb6)
+
+![2](https://github.com/user-attachments/assets/46ae3f94-9f2e-4492-b3eb-d767282b03c2)
+
+**Delay table usage Part 1**
+
+![1](https://github.com/user-attachments/assets/59eca7a5-70af-4439-911f-327e5b89a2f3)
+
+
+**Delay table usage Part 2**
+![3](https://github.com/user-attachments/assets/92f47540-6d78-4e5b-a69e-5ea280d402d7)
+
+***Lab steps to configure synthesis settings to fix slack and include vsdinv**
+![synthesis](https://github.com/user-attachments/assets/12d5db4d-b977-44ba-8a42-c57e5e56ead1)
+![2](https://github.com/user-attachments/assets/e3616c32-9f4d-4e43-8fb8-161566c442ea)
+![3](https://github.com/user-attachments/assets/47fad521-69ef-4370-bf8f-78ae69aeb622)
+![4](https://github.com/user-attachments/assets/054d3a7f-2f59-4d26-bcbb-1e12705d89e5)
+![5](https://github.com/user-attachments/assets/dd34442e-6b68-4dd6-add9-796abaa2e309)
+![6floorplan](https://github.com/user-attachments/assets/e99bfc3c-59f6-4965-97e3-8f00cdf2270a)
+![7](https://github.com/user-attachments/assets/9777771f-b2bb-45e9-a845-c27cc8dd3f14)
+![7](https://github.com/user-attachments/assets/3fa376c6-54dd-4c4b-94fa-f81566356360)
+
+![8_placement result](https://github.com/user-attachments/assets/1cfb6219-a51a-4d20-a02a-da5b3c804fa8)
+![9](https://github.com/user-attachments/assets/bb3c75ee-3419-4f01-be6f-c08789f94760)
+![10](https://github.com/user-attachments/assets/bc51c434-08ce-4098-b823-6f402736a241)
+
+
+
