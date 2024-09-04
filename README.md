@@ -885,5 +885,67 @@ drc why
 ![12](https://github.com/user-attachments/assets/ae8fba1a-5cbe-4bd5-9140-04ca1ba4bb8e)
 ![13](https://github.com/user-attachments/assets/ab19254c-7efc-4f39-8a3a-32d2d8fe6091)
 
+**L5 - Lab steps to do basic timing ECO**
+![1](https://github.com/user-attachments/assets/4ee651c2-a061-416c-b457-31fd346589df)
+![2](https://github.com/user-attachments/assets/185eb91e-6848-4385-b0c3-c9422877877e)
+![3](https://github.com/user-attachments/assets/69c95f0d-2d5c-4f3e-a9b1-2118f5374211)
+![4](https://github.com/user-attachments/assets/3ea8c3d4-0865-4acb-b0a9-10c3d0f2f6c7)
+![5](https://github.com/user-attachments/assets/9d91322f-5b5c-4f96-b688-435fabc05b98)
+![6](https://github.com/user-attachments/assets/9a2231c3-42fe-4a57-ad2b-1b26292321dc)
+![7](https://github.com/user-attachments/assets/d7d85fe7-cb29-4152-9820-1b38b306b7dd)
+![8](https://github.com/user-attachments/assets/f4875e47-8261-4c30-926b-3805a0a57ad8)
+![9 1](https://github.com/user-attachments/assets/56794ddf-2cbf-45f6-9391-c8fb1e7ba6d2)
+![9 2](https://github.com/user-attachments/assets/0fe311bb-f86c-47ec-a00c-e15a599de22e)
+
+
+## Clock tree synthesis TritonCTS and signal integrity
+
+**Steps to run CTS using TritonCTS**
+
+
+
+![1](https://github.com/user-attachments/assets/81b8fa98-edc0-414a-9d78-5089bdc457df)
+![2](https://github.com/user-attachments/assets/b22c0334-3490-41de-b3b9-86c826f0a8e7)
+![3](https://github.com/user-attachments/assets/3eb40503-4df1-4f60-81b3-0edaf06ca46d)
+![4](https://github.com/user-attachments/assets/0e23427f-975d-4211-98a8-a1dd8a84c120)
+![5](https://github.com/user-attachments/assets/0ad3138c-0454-484e-bc34-c74b3d20e202)
+![5 1](https://github.com/user-attachments/assets/1d5b687a-baff-4c84-af87-1b6c54ec901d)
+![6](https://github.com/user-attachments/assets/02509d46-cc93-46cf-9cf9-dd1803e9c4fb)
+![7](https://github.com/user-attachments/assets/118b5fcc-47fc-48fb-bd61-e77fbee607eb)
+![8](https://github.com/user-attachments/assets/f8676da0-a43d-4a2c-9a87-66b1542bb717)
+![9](https://github.com/user-attachments/assets/2750ed45-fe7a-4ef0-a9a1-8ca11984e6f2)
+![9 1](https://github.com/user-attachments/assets/12f2ec3e-2f7e-4753-86ae-e42b3b7ae022)
+
+![10](https://github.com/user-attachments/assets/725f25a9-a6f0-41b5-bd18-5b0d182d728f)
+![11](https://github.com/user-attachments/assets/74909864-bb17-46c4-8289-fab99a754a7a)
+![12](https://github.com/user-attachments/assets/255775e0-2857-48bf-9d30-68eaab3b2b01)
+![13_floorplanrun](https://github.com/user-attachments/assets/e0c7d538-f3df-4f44-8031-62b6ad29a0ae)
+![14](https://github.com/user-attachments/assets/a6a8ce8d-ccfa-4005-8ef0-3c7aefcd67ab)
+![15](https://github.com/user-attachments/assets/6adb6463-56d5-431d-8aa9-4ecdd7d05224)
+![16](https://github.com/user-attachments/assets/4603e27e-665a-4184-a7b4-a49590883e47)
+![17](https://github.com/user-attachments/assets/ba14d099-77aa-43f7-9c69-91b482432163)
+
+**Steps to verify CTS runs**
+
+
+![1](https://github.com/user-attachments/assets/c23a7870-b89b-4193-b6a8-9d889d7131bd)
+![2](https://github.com/user-attachments/assets/4a8054e2-6690-4b1b-b2f3-c3c761bfe715)
+![3](https://github.com/user-attachments/assets/6c6083f8-b395-49c7-a0fb-83e3407d2a78)
+![4](https://github.com/user-attachments/assets/81662c7c-8fab-459b-bd89-0fe1c400fe7a)
+![5](https://github.com/user-attachments/assets/e4ca4470-b183-4654-8435-4d0e92f7be1c)
+![6](https://github.com/user-attachments/assets/22555218-16af-4b73-a12b-d4709f89f301)
+![6 1](https://github.com/user-attachments/assets/c6364814-1be8-42dc-9bcc-57687d1cf670)
+![7](https://github.com/user-attachments/assets/1a425719-506f-49d8-8463-695630248b97)
+![8](https://github.com/user-attachments/assets/1a77b5c7-01a1-4012-9fca-6465900e308d)
+![8 1](https://github.com/user-attachments/assets/fba2bb06-8a51-47eb-b04a-b9af9027b405)
+![9](https://github.com/user-attachments/assets/c0dc52e5-89c1-4be7-8e3b-712caccd8e94)
+![10](https://github.com/user-attachments/assets/85986d1a-5761-4ba4-8d82-7bc4ba8262cb)
+
+
+
+
+
+
+
 
 
