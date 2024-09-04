@@ -941,6 +941,35 @@ drc why
 ![9](https://github.com/user-attachments/assets/c0dc52e5-89c1-4be7-8e3b-712caccd8e94)
 ![10](https://github.com/user-attachments/assets/85986d1a-5761-4ba4-8d82-7bc4ba8262cb)
 
+## Timing analysis with real clocks using openSTA
+
+**Lab steps to analyze timing with real clocks using OpenSTA**
+![1](https://github.com/user-attachments/assets/568e7da9-e893-44da-8d27-dbe27e3ddbe0)
+
+![2](https://github.com/user-attachments/assets/f83582bb-913f-407e-8779-d9b19b721bed)
+![3](https://github.com/user-attachments/assets/a4059e86-74f6-4c42-8425-0aba355d0072)
+![4](https://github.com/user-attachments/assets/350aa818-af9d-4ba2-a8a2-84060166f088)
+![5](https://github.com/user-attachments/assets/f24e4358-c618-40d2-9cb1-145bb8d0d024)
+![6](https://github.com/user-attachments/assets/857d8f53-5b79-46b3-b20b-625e665e1ffe)
+
+![7](https://github.com/user-attachments/assets/68b58cf9-f7c3-4781-8a6d-9823f638c4cf)
+
+**Lab steps to execute OpenSTA with right timing libraries and CTS assignment**
+
+![1](https://github.com/user-attachments/assets/6e92be18-f61b-406e-ab0a-3b68c7e3e61b)
+![2](https://github.com/user-attachments/assets/fac6323d-a83a-442d-bb3a-6d4db2286b50)
+![3](https://github.com/user-attachments/assets/43263db9-3764-4295-a626-802bb42aebc2)
+![4](https://github.com/user-attachments/assets/96772fa4-5680-42c5-8714-500fdd8eb387)
+![5](https://github.com/user-attachments/assets/c2abae93-a16e-46b3-a6d7-592f3e93afc3)
+![6](https://github.com/user-attachments/assets/c17be0e8-fdd9-4313-9342-ef1ba9b554e5)
+
+
+
+
+
+
+
+
 
 
 
