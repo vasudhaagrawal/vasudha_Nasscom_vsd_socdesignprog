@@ -841,6 +841,7 @@ drc why
 ![1](https://github.com/user-attachments/assets/8ee47b49-66d2-4afa-b74e-9adb716e5365)
 
 **L2 - Introduction to clock jitter and uncertainty**
+
 ![1](https://github.com/user-attachments/assets/b660ae77-c2c1-494e-83df-62022f56ea4e)
 
 ![2](https://github.com/user-attachments/assets/f6a2125e-c921-4f20-a527-702273ff4be0)
@@ -851,3 +852,38 @@ drc why
 ![5](https://github.com/user-attachments/assets/90f6b7b4-dead-4c17-b04e-de80b0666985)
 ![6](https://github.com/user-attachments/assets/d78552c7-7e0b-461a-9127-e40184c41d6b)
 ![7](https://github.com/user-attachments/assets/db88c4ff-1f93-4a4b-9707-9cf1fe334e11)
+
+
+**L3 - Steps to configure OpenSTA for post-synth timing analysis**
+
+
+![1](https://github.com/user-attachments/assets/14d47e49-eb79-4ea3-bb57-0e6cf96361a5)
+![1 1](https://github.com/user-attachments/assets/4678d6f4-f8c5-450d-9470-91af10e0dd07)
+![2](https://github.com/user-attachments/assets/c352071c-5471-4166-8e05-f4a1fa4377fe)
+![3_capacitance](https://github.com/user-attachments/assets/83655446-c049-40b2-8af7-af31722c8791)
+![3](https://github.com/user-attachments/assets/1b2fc431-d9dc-49f4-9341-3f4f46a24a2b)
+![3 1](https://github.com/user-attachments/assets/ccc4a946-afa9-47fb-a344-82ddb207ead3)
+![3 2](https://github.com/user-attachments/assets/a6061f9e-e537-4636-aecf-5f7e2b85685a)
+![5mybase](https://github.com/user-attachments/assets/be379b4f-7e50-4817-a5b6-a3854c08cfd9)
+![5 1mybase](https://github.com/user-attachments/assets/7298f7cb-7726-4525-b75e-fb686b7a296c)
+![6](https://github.com/user-attachments/assets/98c1e3f1-cb7f-453a-b841-752988eb7d4c)
+![7_sta pre_sta conf](https://github.com/user-attachments/assets/79353c70-6e32-44c0-9711-96eec8ec0e55)
+
+**L4 - Lab steps to optimize synthesis to reduce setup violations**
+
+![1](https://github.com/user-attachments/assets/4f4f39d8-1b21-4d7e-a4d5-2157579af07c)
+![2](https://github.com/user-attachments/assets/585999cf-8c90-4773-8a98-8307065dc62c)
+![3](https://github.com/user-attachments/assets/52afc4c1-f0ca-4daf-ab08-e2703a19ffda)
+![4](https://github.com/user-attachments/assets/d3fdaf8e-37fb-4ee8-8c6e-bb2c66a41acd)
+![5](https://github.com/user-attachments/assets/37f358c4-019c-402a-a162-c418b4e2ebd7)
+![6](https://github.com/user-attachments/assets/6d1f9b41-6bd4-4ee3-82b7-2cfd1d44fb04)
+![7](https://github.com/user-attachments/assets/cb587838-7151-4437-af13-0fd3dd081265)
+![8](https://github.com/user-attachments/assets/8fa17410-d422-4fcc-91bd-5ee9dcf3b7ec)
+![9](https://github.com/user-attachments/assets/35e143be-4774-4742-a971-29ee11cdc6ac)
+![10](https://github.com/user-attachments/assets/e9cfc748-43aa-418a-bb98-52919d2763c3)
+![11](https://github.com/user-attachments/assets/1d3adaef-5121-4259-939d-4248700ce075)
+![12](https://github.com/user-attachments/assets/ae8fba1a-5cbe-4bd5-9140-04ca1ba4bb8e)
+![13](https://github.com/user-attachments/assets/ab19254c-7efc-4f39-8a3a-32d2d8fe6091)
+
+
+
